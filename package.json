@@ -1,0 +1,62 @@
+{
+    "name": "fvi-node-face-api-rtsp-stream",
+    "version": "0.0.3",
+    "description": "FVI - Node Face API RTSP Stream Consumer",
+    "main": "src/index.js",
+    "prettier": "fvi-prettier-config",
+    "scripts": {
+        "compile": "grunt compile",
+        "test": "grunt test",
+        "debug-test": "grunt debug-test",
+        "dev": "grunt dev",
+        "debug-dev": "grunt debug-dev",
+        "build": "grunt compile build",
+        "release": "grunt version && grunt release",
+        "release:minor": "grunt version:minor && grunt release:minor",
+        "release:major": "grunt version:major && grunt release:major",
+        "release:finish": "grunt release:finish",
+        "coverage": "npx nyc@latest npm run test"
+    },
+    "keywords": [
+        "node",
+        "face-api.js",
+        "node-rtsp-stream"
+    ],
+    "repository": "https://github.com/salespaulo/fvi-node-face-api-rtsp-stream.git",
+    "author": {
+        "name": "FVI",
+        "email": "salespaulo08@gmail.com",
+        "twitter": "@fvi"
+    },
+    "license": "MIT",
+    "dependencies": {
+        "@mediapipe/face_mesh": "^0.4.1633559619",
+        "@tensorflow-models/face-landmarks-detection": "^1.0.2",
+        "@tensorflow/tfjs-backend-webgl": "^3.20.0",
+        "@tensorflow/tfjs-core": "^3.20.0",
+        "@tensorflow/tfjs-node": "1.7.4",
+        "canvas": "2.6.1",
+        "face-api.js": "0.22.2",
+        "moment": "^2.29.0",
+        "node-rtsp-stream": "0.0.9",
+        "sharp": "^0.26.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.11.6",
+        "@babel/core": "^7.11.6",
+        "@babel/preset-env": "^7.11.5",
+        "chai": "^4.2.0",
+        "express": "^4.17.1",
+        "fvi-prettier-config": "^0.0.1",
+        "grunt": "^1.0.4",
+        "grunt-contrib-clean": "^2.0.0",
+        "grunt-contrib-watch": "^1.1.0",
+        "grunt-env": "^1.0.1",
+        "grunt-mocha-test": "^0.13.3",
+        "grunt-shell": "^3.0.1",
+        "http": "0.0.1-security",
+        "load-grunt-tasks": "^5.0.1",
+        "mocha": "^7.0.1",
+        "ws": "^7.3.1"
+    }
+}
